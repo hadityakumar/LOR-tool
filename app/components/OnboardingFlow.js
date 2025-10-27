@@ -94,12 +94,12 @@ export default function OnboardingFlow({ onComplete, onSkip }) {
         <X size={24} />
       </button>
 
-      <div className="flex-1 flex items-center justify-center p-8">
-        <div className="w-full max-w-2xl flex flex-col" style={{ minHeight: '600px' }}>
+      <div className="flex-1 flex items-center justify-center p-8 pb-16">
+        <div className="w-full max-w-2xl flex flex-col" style={{ minHeight: '550px' }}>
           <h2 className="text-4xl font-light text-black mb-2">{steps[currentStep].title}</h2>
           <p className="text-gray-500 mb-8">Step {currentStep + 1} of {steps.length}</p>
 
-          <div className="space-y-6 flex-1" style={{ minHeight: '400px' }}>
+          <div className="space-y-6 flex-1" style={{ minHeight: '350px' }}>
             {steps[currentStep].fields.map((field) => (
               <div key={field.name}>
                 <label className="block text-sm font-medium text-black mb-2">
